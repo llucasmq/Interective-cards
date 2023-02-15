@@ -1,0 +1,269 @@
+@media (max-width: 1292px) {
+  .front-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .left {
+    justify-content: center;
+  }
+
+  .bg-gradiente {
+    display: none;
+  }
+
+  .bg-gradiente-mobile {
+    display: initial;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards {
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
+  }
+
+  .front,
+  .back {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    width: 80%;
+  }
+
+  .front {
+    top: 50%;
+    left: 10%;
+    z-index: 1;
+  }
+
+  .back {
+    top: 5%;
+    left: -10%;
+  }
+
+  .front-content {
+    width: 100%;
+    grid-template-rows: 1fr 2fr;
+    padding: 5%;
+    left: -1%;
+  }
+
+  .card-logo {
+    max-width: 25%;
+  }
+
+  .text {
+    display: grid;
+    align-content: space-around;
+  }
+
+  .text h1 {
+    position: relative;
+    font-size: 150%;
+    font-weight: 400;
+    align-self: center;
+  }
+
+  .text-botton p {
+    font-size: 1rem;
+  }
+
+  .right {
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form {
+    left: unset;
+    width: 90%;
+    height: 95%;
+    align-items: end;
+  }
+
+  form {
+    height: 80%;
+    width: 100%;
+  }
+
+  form button {
+    padding: 2%;
+  }
+
+  .abaixo {
+    height: 30%;
+  }
+
+  .inline {
+    height: 30%;
+  }
+
+  .abaixo div {
+    align-items: center;
+    justify-content: end;
+  }
+
+  .inline span {
+    bottom: 10%;
+  }
+  .cvc p {
+    width: 60%;
+  }
+}
+
+@media (max-width: 740px) {
+  .text h1 {
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 650px) {
+  .cards {
+    width: 100%;
+  }
+
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 515px) {
+  .text h1 {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 515px) {
+  .text h1 {
+    font-size: 110%;
+  }
+  .front,
+  .back {
+    height: 85%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 435px) {
+  html {
+    overflow: hidden;
+  }
+  .text h1 {
+    font-size: 140%;
+  }
+  .cards {
+    width: 140%;
+  }
+
+  .front,
+  .back {
+    height: 90%;
+    width: 100%;
+  }
+
+  .front {
+    left: 18%;
+  }
+
+  .back {
+    left: -18%;
+  }
+
+  .cvc p {
+    width: 75%;
+  }
+}
+
+@media (max-width: 380px) {
+  .text h1 {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 340px) {
+  .text p,
+  .front-content {
+    font-size: 100%;
+  }
+
+  .text h1 {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .cvc p {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 282px) {
+  .text p,
+  .front-content {
+    font-size: 90%;
+  }
+
+  .text h1 {
+    font-size: 90%;
+  }
+  .cvc p {
+    font-size: 80%;
+  }
+}
+
+@media (max-height: 500px) {
+  .left {
+    display: none;
+  }
+
+  .right {
+    height: 100vh;
+  }
+
+  .form {
+    height: 100%;
+    align-items: center;
+  }
+
+  form {
+    height: 90%;
+  }
+}
+
+@media (max-height: 593px) {
+  .front-content {
+    width: 80%;
+  }
+  .text h1 {
+    font-size: 100%;
+  }
+}
+
+@media (max-height: 580px) {
+  .cvc p {
+    width: 65%;
+  }
+}
+
+@media (max-height: 548px) {
+  .cvc p {
+    width: 55%;
+  }
+}
+
+@media (max-height: 515px) {
+  .cvc p {
+    width: 50%;
+  }
+}

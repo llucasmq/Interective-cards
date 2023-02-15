@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="left">
+    <img class="bg-gradiente-mobile" src="images/bg-main-mobile.png" alt="">
+    <img class="bg-gradiente" src="images/bg-main-desktop.png" alt="">
+
+    <div class="cards">
+      <div class="front">
+        <img class="bg-card" src="images/bg-card-front.png" alt="">
+        <div class="front-content">
+          <img class="card-logo" src="images/card-logo.svg" alt="">
+          <div class="text">
+            <h1>0000 0000 0000 0000</h1>
+            <div class="text-botton">
+              <p>Jane Appleseed</p>
+              <div>
+                <span class="month">00</span><span>/</span><span class="year">00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="back">
+        <img class="bg-card" src="images/bg-card-back.png" alt="">
+        <div class="cvc">
+          <p>000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------------------------------------------------------------------- -->
+
+  <div class="right">
+    <div class="form">
+      <form name="card" action="">
+
+        <div class="abaixo">
+          <label for="name">CARDHOLDER NAME</label>
+          <input type="text" name="name" id="name" maxlength="50" placeholder="e.g. Jane Appleseed" required>
+          <div>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="abaixo">
+          <label for="number">CARD NUMBER</label>
+          <input type="text" name="card-number" id="number" placeholder="e.g. 1234 5678 9123 0000" minlength="16" maxlength="16" pattern="^[0-9]+$" required>
+          <div>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="inline">
+
+          <div class="inline-date">
+            <label for="expiration">EXP. DATE</label>
+            <div>
+              <input type="text" name="expiration-1" id="expiration" maxlength="2" placeholder="MM" required>
+              <input type="text" name="expiration" id="expiration" maxlength="2" placeholder="YY" required>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="inline-cvc">
+            <label for="CVC">CVC</label>
+            <div>
+              <input type="text" maxlength="3" name="CVC" id="CVC" placeholder="e.g. 123" required>
+              <span></span>
+            </div>
+          </div>
+
+        </div>
+
+        <button>Confirm</button>
+
+        <div class="feedback-message">
+          <div class="message-complete">
+            <img src="images/icon-complete.svg" alt="">
+
+            <div>
+              <h2>THANK YOU!</h2>
+              <p>We've added your card details</p>
+              <button>Continue</button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="script/validation.js"></script>
+  <script src="script/feedbackMessage.js"></script>
+</body>
+
+</html>

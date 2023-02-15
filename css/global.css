@@ -1,0 +1,334 @@
+:root {
+  --Linear-gradient: linear-gradient(to right, #6448fe, #600594);
+  --Red: hsl(0, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+html,
+body,
+section,
+div {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: absolute;
+}
+
+.left {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.bg-gradiente-mobile {
+  display: none;
+}
+
+.bg-gradiente {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+}
+
+.cards {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.front,
+.back {
+  box-sizing: border-box;
+  position: relative;
+  height: 40%;
+  width: 100%;
+}
+
+.front {
+  left: 40%;
+}
+
+.back {
+  left: 55%;
+}
+
+.bg-card {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+}
+
+.front-content {
+  box-sizing: border-box;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 5%;
+}
+
+.card-logo {
+  position: relative;
+  max-width: 30%;
+  height: auto;
+}
+
+.text {
+  display: grid;
+  align-content: space-between;
+}
+
+.text h1 {
+  font-size: 150%;
+}
+
+.text h1,
+.text-botton p,
+.text-botton span {
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+.text-botton {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.back {
+  justify-content: center;
+  position: relative;
+}
+
+.cvc {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.cvc p {
+  display: flex;
+  flex-flow: row-reverse;
+  margin: 0;
+  position: relative;
+  color: white;
+  width: 60%;
+}
+
+.right {
+  padding: 10%;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 70%;
+  height: 100%;
+  /* border: 2px solid black; */
+  position: relative;
+  left: 25%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+form {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form span {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  color: var(--Red);
+  font-size: 0.7rem;
+}
+
+.abaixo div {
+  visibility: hidden;
+}
+
+.abaixo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+}
+
+.abaixo div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 30%;
+  color: var(--Red);
+  font-size: 0.7rem;
+}
+
+.abaixo label {
+  height: 20%;
+  font-size: 80%;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.abaixo input {
+  height: 50%;
+  border: 1.5px solid var(--dark-grayish-violet);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form input:focus {
+  outline: none;
+  border: 1.5px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #6448fe, #600594) border-box;
+  border-radius: 8px;
+}
+::placeholder {
+  padding-left: 10px;
+}
+
+.inline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20%;
+  width: 100%;
+}
+
+.inline-date,
+.inline-cvc {
+  height: 100%;
+  width: 100%;
+}
+
+.inline-date label,
+.inline-cvc label {
+  height: 20%;
+  font-size: 80%;
+  letter-spacing: 0.2rem;
+}
+
+.inline-date div,
+.inline-cvc div {
+  top: 10%;
+  display: flex;
+  position: relative;
+  height: 70%;
+  width: 100%;
+}
+.inline input {
+  height: 60%;
+  border: 1px solid var(--dark-grayish-violet);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.inline-date input {
+  width: 40%;
+  margin-right: 5%;
+}
+
+.inline-cvc input {
+  width: 100%;
+}
+
+.inline span {
+  bottom: 10%;
+}
+
+form button {
+  background-color: var(--very-dark-violet);
+  color: white;
+  cursor: pointer;
+  padding: 4%;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: none;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+}
+
+.abaixo.invalido div {
+  visibility: visible;
+}
+
+.invalido span {
+  visibility: visible;
+}
+
+.feedback-message {
+  position: absolute;
+  background-color: var(--white);
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.feedback-message.ativo {
+  display: flex;
+}
+
+.message-complete {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  text-align: center;
+  height: 100%;
+}
+
+.message-complete div {
+  width: 100%;
+  /* height: 50%; */
+}
+
+.message-complete img {
+  justify-self: center;
+  align-self: end;
+}
+
+.message-complete h2 {
+  width: 100%;
+  color: var(--Linear-gradient);
+  letter-spacing: 0.3rem;
+}
+
+.message-complete p {
+  width: 100%;
+  color: var(--dark-grayish-violet);
+  font-size: 1.2rem;
+}
+
+.message-complete button {
+  width: 100%;
+  height: 25%;
+}
